@@ -1,0 +1,105 @@
+
+   <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Kusum Kumar</title>
+    <style>
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/09/90/68/62/240_F_990686296_eQXo8wonbB7P4EwClBH0wrIOsjfnzNDh.jpg');
+            background-size: 1600px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for date and time */
+        #live-time {
+            font-size: 14px;
+            font-weight: normal;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: #000; /* Adjust color as needed */
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Live Time and Date Display -->
+    <div id="live-time"></div>
+
+    <marquee class="marquee-text"><h1>WELCOME TO MY PROFILE</h1></marquee>
+    <marquee scrollamount="5">You are seeing my profile</marquee>
+
+    <a href="file:///C:/Users/kusum/Documents/home.html"><button>Home</button></a>
+    <a href="C:\Users\kusum\Documents\gallery.html"><button>Gallery</button></a>
+    <a href="file:///C:/Users/kusum/Documents/Portfolio/aboutme.html"><button>About Me</button></a>
+    <a href="file:///C:/Users/kusum/Documents/Portfolio/contact%20us.html"><button>Contact Us</button></a>
+
+    <table border="1" width="100%">
+        <tr>
+            <td>
+                <h3>Profile</h3>
+                <ul>
+                    <li>Name: K. Kumar</li>
+                    <li>Date of Birth: 16-12-2005</li>
+                    <li>Age: 19</li>
+                    <li>Nationality: Indian</li>
+                    <li>Native Place: Vijayawada</li>
+                </ul>
+            </td>
+            <td>
+                <h3>Hobbies</h3>
+                <p>1. Reading books</p>
+                <p>2. Participating in Hackathons</p>
+                <p>3. Problem Solving</p>
+                <p>4. Internships</p>
+            </td>
+            <td>
+                <h3>Academic Qualifications</h3>
+                <p>B.Tech (Computer Science) from SRM University</p>
+                <p>Specializations: Cyber Security</p>
+                <ul>
+                    <h3>Skills</h3>
+                    <li>Web Technology Specialist</li>
+                    <li>Advanced Data Structures Techniques</li>
+                    <li>Operating Systems</li>
+                    <li>Performance Optimization in Web Applications</li>
+                    <li>Networking</li>
+                    <li>Security in Web Applications</li>
+                    <li>Hands-on Python</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JavaScript for Live Time and Date -->
+    <script>
+        function updateTime() {
+            const timeDisplay = document.getElementById('live-time');
+            const now = new Date();
+            const formattedDate = now.toLocaleDateString(); // Format: MM/DD/YYYY
+            const formattedTime = now.toLocaleTimeString(); // Format: HH:MM:SS
+            timeDisplay.textContent = `${formattedDate} | ${formattedTime}`;
+        }
+
+        // Update time and date every second
+        setInterval(updateTime, 1000);
+
+        // Initial call to display time and date immediately
+        updateTime();
+    </script>
+<footer style="text-align: center; margin-top: 20px;">
+    <p>&copy; 2025 Kumar. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
