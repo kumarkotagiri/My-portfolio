@@ -2,10 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Kotagiri Kumar | Cybersecurity Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,8 +20,6 @@ body{
     background-attachment:fixed;
     font-family:'Poppins',sans-serif;
 }
-
-/* Navigation Buttons */
 
 button{
     padding:12px 24px;
@@ -40,7 +41,9 @@ button:hover{
     box-shadow:0 6px 15px rgba(0,0,0,0.35);
 }
 
-/* Cards */
+.navbar{
+    text-align:center;
+}
 
 .cards{
     display:flex;
@@ -62,7 +65,14 @@ button:hover{
     text-align:center;
 }
 
-/* Headings */
+.section{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.20);
+    backdrop-filter:blur(8px);
+    color:white;
+}
 
 h1,h2{
     text-align:center;
@@ -71,17 +81,6 @@ h1,h2{
 
 ul{
     font-size:18px;
-}
-
-/* Sections */
-
-.section{
-    margin-top:20px;
-    padding:20px;
-    border-radius:15px;
-    background:rgba(255,255,255,0.20);
-    backdrop-filter:blur(8px);
-    color:white;
 }
 
 .marquee{
@@ -97,8 +96,9 @@ footer{
     font-weight:bold;
 }
 
-.navbar{
+.social{
     text-align:center;
+    margin-top:20px;
 }
 
 </style>
@@ -115,25 +115,15 @@ WELCOME TO KOTAGIRI KUMAR'S PORTFOLIO
 Cybersecurity | Research | Innovation | Continuous Learning
 </marquee>
 
-<br>
-
 <div class="navbar">
 
-<a href="index.html">
-<button>🏠 Home</button>
-</a>
+<a href="index.html"><button>🏠 Home</button></a>
 
-<a href="gallery.html">
-<button>🏆 Gallery</button>
-</a>
+<a href="gallery.html"><button>🏆 Gallery</button></a>
 
-<a href="aboutme.html">
-<button>👤 About Me</button>
-</a>
+<a href="aboutme.html"><button>👤 About Me</button></a>
 
-<a href="contact us.html">
-<button>📞 Contact Us</button>
-</a>
+<a href="contact us.html"><button>📞 Contact Us</button></a>
 
 </div>
 
@@ -153,7 +143,6 @@ Hi, I'm <b>Kotagiri Kumar</b>, a Cybersecurity student, researcher, and technolo
 
 <div class="card">
 <h3>Profile</h3>
-
 <ul>
 <li>Kotagiri Kumar</li>
 <li>B.Tech CSE (Cybersecurity)</li>
@@ -162,26 +151,20 @@ Hi, I'm <b>Kotagiri Kumar</b>, a Cybersecurity student, researcher, and technolo
 <li>Python & Java Programmer</li>
 <li>Aspiring Cybersecurity Researcher</li>
 </ul>
-
 </div>
 
 <div class="card">
-
 <h3>Interests</h3>
-
 <ul>
 <li>Cybersecurity Research</li>
 <li>Capture The Flag (CTF) Challenges</li>
 <li>Hackathons & Technical Events</li>
 <li>Continuous Learning</li>
 </ul>
-
 </div>
 
 <div class="card">
-
 <h3>Skills</h3>
-
 <ul>
 <li>Python Programming</li>
 <li>Java Programming</li>
@@ -193,7 +176,16 @@ Hi, I'm <b>Kotagiri Kumar</b>, a Cybersecurity student, researcher, and technolo
 <li>Cloud Security</li>
 <li>Cryptography</li>
 </ul>
+</div>
 
+<div class="card">
+<h3>Projects</h3>
+<ul>
+<li>🛡️ Intrusion Detection System using Machine Learning</li>
+<li>🌸 Flower Classification using Machine Learning</li>
+<li>🔐 Zero-Knowledge Proof Research</li>
+<li>📊 Network Attack Detection using IDS Datasets</li>
+</ul>
 </div>
 
 </div>
@@ -224,7 +216,7 @@ Hi, I'm <b>Kotagiri Kumar</b>, a Cybersecurity student, researcher, and technolo
 
 <hr>
 
-<div style="text-align:center; margin-top:20px;">
+<div class="social">
 
 <a href="mailto:kusumkumaronline@gmail.com">
 <button>📧 Email</button>
