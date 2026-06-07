@@ -1,47 +1,92 @@
- <html>
-<body>
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Kusum kumar</title>
+    <title>Portfolio of Kusum Kumar</title>
+
     <style>
-body{
-            
+        body {
             background-image: url('https://t3.ftcdn.net/jpg/09/90/68/62/240_F_990686296_eQXo8wonbB7P4EwClBH0wrIOsjfnzNDh.jpg');
-            background-size: 1600px;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-			background-attachment:fixed;
-		
-		}
-</style></head>
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .certificate {
+            text-align: center;
+            background-color: rgba(255,255,255,0.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .certificate img {
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <marquee class="marquee-text"><h1>	Avengers Photo Gallery</h1></marquee>
-<marquee scrollamount="5">Avengers photo Gallery </marquee>
 
+    <marquee><h1>My Certifications Gallery</h1></marquee>
+    <marquee scrollamount="5">Professional Certifications and Achievements</marquee>
 
+    <a href="index.html"><button>Home</button></a>
+    <a href="gallery.html"><button>Gallery</button></a>
+    <a href="aboutme.html"><button>About Me</button></a>
+    <a href="contact us.html"><button>Contact Us</button></a>
 
-<a href="index.html">
-        <button>Home</button></a>
-    
-    <a href="gallery.html">
-        <button>Gallery</button></a>
-    <a href="aboutme.html">
-        <button>About Me</button></a>
-<a href="contact us.html">
-        <button>Contact Us</button></a>
-     <h3>Gallery</h3>
+    <h3>My Certifications</h3>
+
     <div class="gallery">
-       <img src="Campus ambasaddor.jpeg" width="300">
 
-<img src="Launched global.jpeg" width="300">
+        <div class="certificate">
+            <img src="SAP.jpeg">
+            <p><b>SAP Certification</b></p>
+        </div>
 
-<img src="Oracle java.jpeg" width="300">
+        <div class="certificate">
+            <img src="Oracle java.jpeg">
+            <p><b>Oracle Java Certification</b></p>
+        </div>
 
-<img src="Red Hat.jpeg" width="300">
+        <div class="certificate">
+            <img src="Red Hat.jpeg">
+            <p><b>Red Hat Certification</b></p>
+        </div>
 
-<img src="SAP.jpeg" width="300">
+        <div class="certificate">
+            <img src="Campus ambasaddor.jpeg">
+            <p><b>Campus Ambassador</b></p>
+        </div>
+
+        <div class="certificate">
+            <img src="Launched global.jpeg">
+            <p><b>Launched Global Achievement</b></p>
+        </div>
+
     </div>
+
 </body>
 </html>
