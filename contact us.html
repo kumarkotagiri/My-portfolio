@@ -1,123 +1,172 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <style>
-    /* Default (light theme) styles */
-    :root {
-      --background-color: #ffffff;
-      --text-color: #000000;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* Dark theme styles */
-    .dark-theme {
-      --background-color: #121212;
-      --text-color: #ffffff;
-    }
+<title>Contact | Kotagiri Kumar</title>
 
-    body {
-      background-color: var(--background-color);
-      color: var(--text-color);
-      background-image: url('background.jpg');
-      background-size: 1600px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-    }
+<style>
 
-    input[name="name"]::placeholder {
-      color: grey;
-      opacity: 0.7;
-    }
+:root{
+    --background-color:#ffffff;
+    --text-color:#000000;
+}
 
-    #theme-toggle {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      padding: 10px;
-      background: none;
-      border: none;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+.dark-theme{
+    --background-color:#121212;
+    --text-color:#ffffff;
+}
+
+body{
+    background-color:var(--background-color);
+    color:var(--text-color);
+    background-image:url('background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    font-family:'Poppins',sans-serif;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#theme-toggle{
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+
+.contact-card{
+    width:70%;
+    margin:auto;
+    margin-top:30px;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    background:rgba(255,255,255,0.20);
+    backdrop-filter:blur(8px);
+}
+
+form{
+    width:70%;
+    margin:auto;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.20);
+    backdrop-filter:blur(8px);
+}
+
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+.link-btn{
+    display:inline-block;
+    text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
-  <!-- Button with Symbol -->
-  <button id="theme-toggle">🌙</button>
-  
-  <a href="index.html"><button>Home</button></a>
-  <a href="gallery.html"><button>Gallery</button></a>
-  <a href="aboutme.html"><button>About Me</button></a>
-  <a href=contact us.html"><button>Contact Us</button></a>
-  
-  <header>
-    <h1>For any queries</h1>
-  </header>
-  <marquee class="marquee-text"></marquee>
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: kusumkumaronline@gmail.com</p>
-    <p>Mobile number: 9652120896</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kusumkumar-online-b6b696289/">https://www.linkedin.com/in/kusumkumar-online-b6b696289/</a></p>
-  </section>
-  <marquee scrollamount="5">For any Queries Fill the below form 👇</marquee>
-  <form onsubmit="showSuccessMessage(); return false;">
-    <label for="name">Name:</label>
-    <input type="text" name="name" placeholder="Enter Your Name">
-    <label for="email">Email:</label>
-    <input type="text" name="email" placeholder="Enter Your Email">
-    <br><br>
-    <label for="Date of Birth">Date of Birth:</label>
-    <input type="date" name="dob"><br><br>
-    <label for="Gender">Gender:</label>
-    <input type="radio" name="sex" id="male" value="male"> <label for="male">Male</label>
-    <input type="radio" name="Gender" id="female" value="female"> <label for="female">Female</label><br><br>
-    <label for="country">Country: </label>
-    <select name="country" id="country">
-      <option>Select an option</option>
-      <option value="india">India</option>
-      <option value="usa">USA</option>
-      <option value="Australia">Australia</option>
-    </select>
-    <br><br>
-    <label for="message">Message:</label>
-    <br>
-    <textarea name="message" id="message" cols="30" rows="4"></textarea>
-    <br><br>
-    <input type="checkbox" name="newsletter" id="newsletter">
-    <input type="submit" value="Submit">
-  </form>
-  <center>
-    <h1><i>Thank You For Visiting..</i></h1>
-  </center>
-  <script>
-    function showSuccessMessage() {
-      alert('Your form was submitted successfully!');
+
+<button id="theme-toggle">🌙</button>
+
+<a href="index.html"><button>Home</button></a>
+<a href="gallery.html"><button>Gallery</button></a>
+<a href="aboutme.html"><button>About Me</button></a>
+<a href="contact us.html"><button>Contact Us</button></a>
+
+<div class="contact-card">
+
+<h1>Contact Me</h1>
+
+<p>📍 Vijayawada, Andhra Pradesh, India</p>
+
+<p>📧 Email: kusumkumaronline@gmail.com</p>
+
+<p>📱 Mobile: 9652120896</p>
+
+<a class="link-btn" href="https://www.linkedin.com/in/kusumkumar-online-b6b696289/" target="_blank">
+<button>LinkedIn Profile</button>
+</a>
+
+<a class="link-btn" href="https://github.com/kumarkotagiri" target="_blank">
+<button>GitHub Profile</button>
+</a>
+
+</div>
+
+<marquee scrollamount="5">
+For any Queries Fill the Form Below 👇
+</marquee>
+
+<form onsubmit="showSuccessMessage(); return false;">
+
+<label>Name</label>
+<input type="text" placeholder="Enter Your Name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter Your Email">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Country</label>
+<select>
+<option>Select Country</option>
+<option>India</option>
+<option>USA</option>
+<option>Australia</option>
+</select>
+
+<label>Message</label>
+<textarea rows="4"></textarea>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<h2><i>Thank You For Visiting</i></h2>
+
+<script>
+
+function showSuccessMessage(){
+    alert('Your form was submitted successfully!');
+}
+
+const toggleButton=document.getElementById('theme-toggle');
+const body=document.body;
+
+toggleButton.addEventListener('click',()=>{
+    body.classList.toggle('dark-theme');
+
+    if(body.classList.contains('dark-theme')){
+        toggleButton.textContent='☀️';
+    }else{
+        toggleButton.textContent='🌙';
     }
+});
 
-    // Theme toggle functionality
-    const toggleButton = document.getElementById('theme-toggle');
-    const body = document.body;
+</script>
 
-    // Load the saved theme from localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      body.classList.add(savedTheme);
-      toggleButton.textContent = savedTheme === 'dark-theme' ? ☀️' : '🌙';
-    }
-
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-theme');
-      const theme = body.classList.contains('dark-theme') ? 'dark-theme' : '';
-      localStorage.setItem('theme', theme);
-      toggleButton.textContent = theme === 'dark-theme' ? '☀️' : '🌙';
-
-    });
-  </script>
-
-  </body>
+</body>
 </html>
+
