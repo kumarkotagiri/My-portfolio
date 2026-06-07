@@ -1,49 +1,126 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Kotagiri Kumar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
+
+body{
+    background-image:url('background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    font-family:'Poppins',sans-serif;
 }
 
-.center {
-text-align: center;
+button{
+    padding:12px 24px;
+    margin:8px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    background:rgba(255,255,255,0.85);
+    color:#222;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    transition:0.3s;
 }
 
-.profile {
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 50%;
-} </style>
+button:hover{
+    transform:translateY(-3px);
+    background:white;
+}
+
+.navbar{
+    text-align:center;
+}
+
+.about-card{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+    padding:25px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.20);
+    backdrop-filter:blur(8px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+.center{
+    text-align:center;
+    color:white;
+}
+
+.profile{
+    display:block;
+    margin:auto;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+.about-card p,
+.about-card li{
+    font-size:18px;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<a href="index.html"><button>Home</button></a> <a href="gallery.html"><button>Gallery</button></a> <a href="aboutme.html"><button>About Me</button></a> <a href="contact us.html"><button>Contact Us</button></a>
+<div class="navbar">
+
+<a href="index.html"><button>🏠 Home</button></a>
+
+<a href="gallery.html"><button>🏆 Gallery</button></a>
+
+<a href="aboutme.html"><button>👤 About Me</button></a>
+
+<a href="contact us.html"><button>📞 Contact Us</button></a>
+
+</div>
+
+<div class="about-card">
 
 <h1 class="center">About Me</h1>
 
-<img src="profile.jpg" alt="Kumar Profile Photo" width="150" class="profile">
+<img src="profile.jpg" alt="Kumar Profile Photo" width="180" class="profile">
 
-<p><strong>
+<p>
 I am a final-year Computer Science and Engineering student specializing in Cybersecurity at SRM University AP. I am passionate about cybersecurity, cryptography, artificial intelligence, and emerging technologies, with a strong commitment to developing secure and innovative solutions for modern digital challenges.
-<br><br>
+</p>
 
-My academic and research journey has provided me with a solid foundation in cybersecurity, programming, machine learning, computer networks, operating systems, database management systems, and software development. I gained valuable research experience through a Summer Research Internship on Intrusion Detection Systems (IDS) using Machine Learning and published a research paper on Zero-Knowledge Proofs, strengthening my expertise in cryptography and privacy-preserving technologies. <br><br>
+<p>
+My academic and research journey has provided me with a solid foundation in cybersecurity, programming, machine learning, computer networks, operating systems, database management systems, and software development. I gained valuable research experience through a Summer Research Internship on Intrusion Detection Systems (IDS) using Machine Learning and published a research paper on Zero-Knowledge Proofs.
+</p>
 
-I continuously enhance my technical expertise through hands-on projects, industry certifications, research activities, and collaborative problem-solving. My areas of interest include Cybersecurity, Digital Forensics, Network Security, Cloud Security, Cryptography, Artificial Intelligence, and Secure Software Development. <br><br>
+<p>
+I continuously enhance my technical expertise through hands-on projects, industry certifications, research activities, and collaborative problem-solving. My areas of interest include Cybersecurity, Digital Forensics, Network Security, Cloud Security, Cryptography, Artificial Intelligence, and Secure Software Development.
+</p>
 
-Driven by curiosity and innovation, I aspire to pursue advanced studies in Cybersecurity, contribute to impactful research, and build a career dedicated to securing digital infrastructure and protecting information systems. </strong></p>
+<p>
+Driven by curiosity and innovation, I aspire to pursue advanced studies in Cybersecurity, contribute to impactful research, and build a career dedicated to securing digital infrastructure and protecting information systems.
+</p>
 
-<h2>Key Highlights</h2>
+<h2 class="center">Key Highlights</h2>
 
 <ul>
 <li>🔒 Cybersecurity Specialist</li>
@@ -59,9 +136,30 @@ Driven by curiosity and innovation, I aspire to pursue advanced studies in Cyber
 <li>🚀 Aspiring Cybersecurity Researcher & Security Engineer</li>
 </ul>
 
+</div>
+
+<hr>
+
+<div style="text-align:center;">
+
+<a href="mailto:kusumkumaronline@gmail.com">
+<button>📧 Email</button>
+</a>
+
+<a href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
+<button>💼 LinkedIn</button>
+</a>
+
+<a href="https://github.com/kumarkotagiri" target="_blank">
+<button>💻 GitHub</button>
+</a>
+
+</div>
+
 <footer>
-    <p class="center">&copy; 2026 Kumar. All rights reserved.</p>
+© 2026 Kotagiri Kumar | Cybersecurity Portfolio
 </footer>
 
 </body>
 </html>
+
