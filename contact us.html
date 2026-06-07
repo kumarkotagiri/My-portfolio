@@ -1,8 +1,9 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -67,15 +68,15 @@ button:hover{
 
 .navbar{
     text-align:center;
-    margin-top:20px;
+    margin-top:15px;
 }
 
 /* Contact Card */
 
 .contact-card{
-    width:70%;
+    width:75%;
     margin:auto;
-    margin-top:30px;
+    margin-top:25px;
     padding:25px;
     text-align:center;
     border-radius:15px;
@@ -87,8 +88,9 @@ button:hover{
 /* Form */
 
 form{
-    width:70%;
+    width:75%;
     margin:auto;
+    margin-top:20px;
     padding:20px;
     border-radius:15px;
     background:rgba(255,255,255,0.20);
@@ -101,8 +103,8 @@ input,select,textarea{
     padding:10px;
     margin-top:5px;
     margin-bottom:12px;
-    border-radius:8px;
     border:none;
+    border-radius:8px;
 }
 
 h1,h2{
@@ -110,13 +112,14 @@ h1,h2{
     color:white;
 }
 
-p{
+p,label{
     font-size:18px;
+    color:white;
 }
 
-.link-btn{
-    display:inline-block;
-    text-decoration:none;
+.social{
+    text-align:center;
+    margin-top:20px;
 }
 
 footer{
@@ -136,19 +139,27 @@ footer{
 
 <div class="navbar">
 
-<a href="index.html"><button>🏠 Home</button></a>
+<a href="index.html">
+<button>🏠 Home</button>
+</a>
 
-<a href="gallery.html"><button>🏆 Gallery</button></a>
+<a href="gallery.html">
+<button>🏆 Gallery</button>
+</a>
 
-<a href="aboutme.html"><button>👤 About Me</button></a>
+<a href="aboutme.html">
+<button>👤 About Me</button>
+</a>
 
-<a href="contact us.html"><button>📞 Contact Us</button></a>
+<a href="contact us.html">
+<button>📞 Contact Us</button>
+</a>
 
 </div>
 
 <div class="contact-card">
 
-<h1>Contact Me</h1>
+<h1>📞 Contact Me</h1>
 
 <p>📍 Vijayawada, Andhra Pradesh, India</p>
 
@@ -158,11 +169,11 @@ footer{
 
 <p>🎓 SRM University AP - Cybersecurity</p>
 
-<a class="link-btn" href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
+<a href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
 <button>💼 LinkedIn Profile</button>
 </a>
 
-<a class="link-btn" href="https://github.com/kumarkotagiri" target="_blank">
+<a href="https://github.com/kumarkotagiri" target="_blank">
 <button>💻 GitHub Profile</button>
 </a>
 
@@ -192,7 +203,7 @@ For Any Queries Fill The Form Below 👇
 </select>
 
 <label>Message</label>
-<textarea rows="4"></textarea>
+<textarea rows="4" placeholder="Enter Your Message"></textarea>
 
 <input type="submit" value="Submit">
 
@@ -202,7 +213,7 @@ For Any Queries Fill The Form Below 👇
 
 <hr>
 
-<div style="text-align:center;">
+<div class="social">
 
 <a href="mailto:kusumkumaronline@gmail.com">
 <button>📧 Email</button>
@@ -245,4 +256,4 @@ toggleButton.addEventListener('click',()=>{
 
 </body>
 </html>
-
+```
