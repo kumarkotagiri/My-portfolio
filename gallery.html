@@ -4,115 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Kotagiri Kumar</title>
+    <title>Kotagiri Kumar | Certifications Gallery</title>
 
     <style>
+
         body {
             background-image: url('background.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        /* Navigation Buttons */
+
+        button{
+            padding:12px 24px;
+            margin:8px;
+            border:none;
+            border-radius:12px;
+            cursor:pointer;
+            font-size:16px;
+            font-weight:600;
+            background:rgba(255,255,255,0.85);
+            color:#222;
+            box-shadow:0 4px 10px rgba(0,0,0,0.25);
+            transition:0.3s;
         }
 
-        .certificate {
-            text-align: center;
-            background-color: rgba(255,255,255,0.8);
-            padding: 10px;
-            border-radius: 10px;
+        button:hover{
+            transform:translateY(-3px);
+            background:white;
+            box-shadow:0 6px 15px rgba(0,0,0,0.35);
         }
 
-        .certificate img {
-            width: 300px;
-            height: auto;
-            border: 2px solid black;
-            border-radius: 10px;
+        .nav-bar{
+            text-align:center;
+            margin-top:15px;
         }
 
-        button {
-            padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            background-color: rgba(255,255,255,0.8);
-            font-size: 16px;
-            font-weight: bold;
+        h1,h2,h3{
+            text-align:center;
+            color:white;
         }
 
-        h1, h3 {
-            text-align: center;
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            gap:25px;
+            justify-content:center;
+            margin-top:20px;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 15px;
-            font-weight: bold;
+        .certificate{
+            text-align:center;
+            background:rgba(255,255,255,0.20);
+            backdrop-filter:blur(8px);
+            padding:15px;
+            border-radius:15px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.3);
         }
+
+        .certificate img{
+            width:300px;
+            height:auto;
+            border-radius:10px;
+            border:2px solid white;
+        }
+
+        .certificate p{
+            color:white;
+            font-weight:bold;
+        }
+
+        .social{
+            text-align:center;
+            margin-top:25px;
+        }
+
+        footer{
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            margin-top:20px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <marquee>
-        <h1>My Certifications Gallery</h1>
+    <marquee scrollamount="6">
+        <h1>🏆 My Certifications Gallery 🏆</h1>
     </marquee>
 
-    <marquee scrollamount="5">
-        Professional Certifications and Achievements
+    <marquee scrollamount="4">
+        Professional Certifications | Achievements | Continuous Learning
     </marquee>
 
-    <a href="index.html"><button>Home</button></a>
-    <a href="gallery.html"><button>Gallery</button></a>
-    <a href="aboutme.html"><button>About Me</button></a>
-    <a href="contact us.html"><button>Contact Us</button></a>
+    <div class="nav-bar">
 
-    <h3>My Certifications</h3>
+        <a href="index.html">
+            <button>🏠 Home</button>
+        </a>
+
+        <a href="gallery.html">
+            <button>🏆 Gallery</button>
+        </a>
+
+        <a href="aboutme.html">
+            <button>👤 About Me</button>
+        </a>
+
+        <a href="contact us.html">
+            <button>📞 Contact Us</button>
+        </a>
+
+    </div>
+
+    <h2>My Certifications</h2>
 
     <div class="gallery">
 
         <div class="certificate">
-            <img src="SAP.jpeg">
-            <p><b>SAP Certification</b></p>
+            <img src="SAP.jpeg" alt="SAP Certification">
+            <p>SAP Generative AI Developer Certification</p>
         </div>
 
         <div class="certificate">
-            <img src="Oracle java.jpeg">
-            <p><b>Oracle Java Certification</b></p>
+            <img src="Oracle java.jpeg" alt="Oracle Java Certification">
+            <p>Oracle Java Certification</p>
         </div>
 
         <div class="certificate">
-            <img src="Red Hat.jpeg">
-            <p><b>Red Hat Certification</b></p>
+            <img src="Red Hat.jpeg" alt="Red Hat Certification">
+            <p>Red Hat Specialized in Containers</p>
         </div>
 
         <div class="certificate">
-            <img src="Campus ambasaddor.jpeg">
-            <p><b>Campus Ambassador</b></p>
+            <img src="Campus ambasaddor.jpeg" alt="Campus Ambassador">
+            <p>Campus Ambassador Program</p>
         </div>
 
         <div class="certificate">
-            <img src="Launched global.jpeg">
-            <p><b>Launched Global Achievement</b></p>
+            <img src="Launched global.jpeg" alt="Launched Global">
+            <p>Launched Global Achievement</p>
         </div>
 
     </div>
 
-    <br><br>
-
     <hr>
 
-    <div style="text-align:center; margin-top:20px;">
+    <div class="social">
 
-        <a href="mailto:kusumkumaronline@gmail.com" target="_blank">
+        <a href="mailto:kusumkumaronline@gmail.com">
             <button>📧 Email</button>
         </a>
 
@@ -132,4 +178,3 @@
 
 </body>
 </html>
-
