@@ -21,6 +21,8 @@ body{
     font-family:'Poppins',sans-serif;
 }
 
+/* Buttons */
+
 button{
     padding:12px 24px;
     margin:8px;
@@ -38,26 +40,27 @@ button{
 button:hover{
     transform:translateY(-3px);
     background:white;
+    box-shadow:0 6px 15px rgba(0,0,0,0.35);
 }
+
+/* Navigation */
 
 .navbar{
     text-align:center;
+    margin-top:15px;
 }
+
+/* About Card */
 
 .about-card{
     width:80%;
     margin:auto;
-    margin-top:20px;
+    margin-top:25px;
     padding:25px;
     border-radius:15px;
     background:rgba(255,255,255,0.20);
     backdrop-filter:blur(8px);
     box-shadow:0 4px 12px rgba(0,0,0,0.3);
-}
-
-.center{
-    text-align:center;
-    color:white;
 }
 
 .profile{
@@ -67,10 +70,20 @@ button:hover{
     border:3px solid white;
 }
 
-.about-card p,
-.about-card li{
-    font-size:18px;
+h1,h2{
+    text-align:center;
     color:white;
+}
+
+p,li{
+    color:white;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.social{
+    text-align:center;
+    margin-top:20px;
 }
 
 footer{
@@ -88,19 +101,27 @@ footer{
 
 <div class="navbar">
 
-<a href="index.html"><button>🏠 Home</button></a>
+<a href="index.html">
+<button>🏠 Home</button>
+</a>
 
-<a href="gallery.html"><button>🏆 Gallery</button></a>
+<a href="gallery.html">
+<button>🏆 Gallery</button>
+</a>
 
-<a href="aboutme.html"><button>👤 About Me</button></a>
+<a href="aboutme.html">
+<button>👤 About Me</button>
+</a>
 
-<a href="contact us.html"><button>📞 Contact Us</button></a>
+<a href="contact us.html">
+<button>📞 Contact Us</button>
+</a>
 
 </div>
 
 <div class="about-card">
 
-<h1 class="center">About Me</h1>
+<h1>👤 About Me</h1>
 
 <img src="profile.jpg" alt="Kumar Profile Photo" width="180" class="profile">
 
@@ -109,7 +130,7 @@ I am a final-year Computer Science and Engineering student specializing in Cyber
 </p>
 
 <p>
-My academic and research journey has provided me with a solid foundation in cybersecurity, programming, machine learning, computer networks, operating systems, database management systems, and software development. I gained valuable research experience through a Summer Research Internship on Intrusion Detection Systems (IDS) using Machine Learning and published a research paper on Zero-Knowledge Proofs.
+My academic and research journey has provided me with a strong foundation in cybersecurity, programming, machine learning, computer networks, operating systems, database management systems, and software development. I gained valuable research experience through a Summer Research Internship on Intrusion Detection Systems (IDS) using Machine Learning and published a research paper on Zero-Knowledge Proofs, strengthening my expertise in cryptography and privacy-preserving technologies.
 </p>
 
 <p>
@@ -120,7 +141,7 @@ I continuously enhance my technical expertise through hands-on projects, industr
 Driven by curiosity and innovation, I aspire to pursue advanced studies in Cybersecurity, contribute to impactful research, and build a career dedicated to securing digital infrastructure and protecting information systems.
 </p>
 
-<h2 class="center">Key Highlights</h2>
+<h2>🚀 Key Highlights</h2>
 
 <ul>
 <li>🔒 Cybersecurity Specialist</li>
@@ -128,7 +149,7 @@ Driven by curiosity and innovation, I aspire to pursue advanced studies in Cyber
 <li>📄 Published Researcher – Zero-Knowledge Proofs</li>
 <li>🐍 Python Programmer</li>
 <li>☕ Java Programmer</li>
-<li>📦 Red Hat Containers Certified</li>
+<li>📦 Red Hat Specialized in Containers Certified</li>
 <li>☕ Oracle Java Certified</li>
 <li>🤖 SAP Generative AI Developer Certified</li>
 <li>🏆 Hackathon Participant</li>
@@ -140,7 +161,7 @@ Driven by curiosity and innovation, I aspire to pursue advanced studies in Cyber
 
 <hr>
 
-<div style="text-align:center;">
+<div class="social">
 
 <a href="mailto:kusumkumaronline@gmail.com">
 <button>📧 Email</button>
