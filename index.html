@@ -15,24 +15,30 @@ body{
     background-repeat:no-repeat;
     background-position:center;
     background-attachment:fixed;
-    font-family:Arial, sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 /* Navigation Buttons */
 
 button{
-    padding:10px 20px;
-    margin:5px;
-    font-size:18px;
-    border-radius:8px;
+    padding:12px 24px;
+    margin:8px;
     border:none;
+    border-radius:12px;
     cursor:pointer;
-    background:rgba(255,255,255,0.75);
-    font-weight:bold;
+    font-size:16px;
+    font-weight:600;
+    background:rgba(255,255,255,0.85);
+    color:#222;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    transition:0.3s;
 }
-   
 
-
+button:hover{
+    transform:translateY(-3px);
+    background:white;
+    box-shadow:0 6px 15px rgba(0,0,0,0.35);
+}
 
 /* Cards */
 
@@ -75,6 +81,7 @@ ul{
     border-radius:15px;
     background:rgba(255,255,255,0.20);
     backdrop-filter:blur(8px);
+    color:white;
 }
 
 .marquee{
@@ -88,6 +95,10 @@ footer{
     margin-top:20px;
     color:white;
     font-weight:bold;
+}
+
+.navbar{
+    text-align:center;
 }
 
 </style>
@@ -106,20 +117,43 @@ Cybersecurity | Research | Innovation | Continuous Learning
 
 <br>
 
-<a href="index.html"><button>Home</button></a>
+<div class="navbar">
 
-<a href="gallery.html"><button>Gallery</button></a>
+<a href="index.html">
+<button>🏠 Home</button>
+</a>
 
-<a href="aboutme.html"><button>About Me</button></a>
+<a href="gallery.html">
+<button>🏆 Gallery</button>
+</a>
 
-<a href="contact us.html"><button>Contact Us</button></a>
+<a href="aboutme.html">
+<button>👤 About Me</button>
+</a>
 
-<br><br>
+<a href="contact us.html">
+<button>📞 Contact Us</button>
+</a>
+
+</div>
+
+<div class="section">
+
+<h2>Welcome</h2>
+
+<p style="font-size:18px; text-align:center;">
+Hi, I'm <b>Kotagiri Kumar</b>, a Cybersecurity student, researcher, and technology enthusiast. My interests include Network Security, Digital Forensics, Cryptography, Machine Learning, and Cloud Security. Through research, certifications, and hands-on projects, I strive to build innovative solutions that contribute to a safer digital world.
+</p>
+
+</div>
+
+<br>
 
 <div class="cards">
 
 <div class="card">
 <h3>Profile</h3>
+
 <ul>
 <li>Kotagiri Kumar</li>
 <li>B.Tech CSE (Cybersecurity)</li>
@@ -128,20 +162,26 @@ Cybersecurity | Research | Innovation | Continuous Learning
 <li>Python & Java Programmer</li>
 <li>Aspiring Cybersecurity Researcher</li>
 </ul>
+
 </div>
 
 <div class="card">
+
 <h3>Interests</h3>
+
 <ul>
 <li>Cybersecurity Research</li>
 <li>Capture The Flag (CTF) Challenges</li>
 <li>Hackathons & Technical Events</li>
 <li>Continuous Learning</li>
 </ul>
+
 </div>
 
 <div class="card">
+
 <h3>Skills</h3>
+
 <ul>
 <li>Python Programming</li>
 <li>Java Programming</li>
@@ -153,6 +193,7 @@ Cybersecurity | Research | Innovation | Continuous Learning
 <li>Cloud Security</li>
 <li>Cryptography</li>
 </ul>
+
 </div>
 
 </div>
@@ -181,8 +222,26 @@ Cybersecurity | Research | Innovation | Continuous Learning
 
 </div>
 
+<hr>
+
+<div style="text-align:center; margin-top:20px;">
+
+<a href="mailto:kusumkumaronline@gmail.com">
+<button>📧 Email</button>
+</a>
+
+<a href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
+<button>💼 LinkedIn</button>
+</a>
+
+<a href="https://github.com/kumarkotagiri" target="_blank">
+<button>💻 GitHub</button>
+</a>
+
+</div>
+
 <footer>
-© 2026 Kotagiri Kumar. All Rights Reserved.
+© 2026 Kotagiri Kumar | Cybersecurity Portfolio
 </footer>
 
 </body>
