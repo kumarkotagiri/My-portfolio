@@ -8,6 +8,8 @@
 
 <title>Contact | Kotagiri Kumar</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 :root{
@@ -31,20 +33,44 @@ body{
     font-family:'Poppins',sans-serif;
 }
 
+/* Buttons */
+
 button{
-    padding:10px 20px;
-    margin:5px;
+    padding:12px 24px;
+    margin:8px;
     border:none;
-    border-radius:8px;
+    border-radius:12px;
     cursor:pointer;
     font-size:16px;
+    font-weight:600;
+    background:rgba(255,255,255,0.85);
+    color:#222;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    transition:0.3s;
 }
+
+button:hover{
+    transform:translateY(-3px);
+    background:white;
+    box-shadow:0 6px 15px rgba(0,0,0,0.35);
+}
+
+/* Theme Button */
 
 #theme-toggle{
     position:fixed;
     top:10px;
     right:10px;
 }
+
+/* Navigation */
+
+.navbar{
+    text-align:center;
+    margin-top:20px;
+}
+
+/* Contact Card */
 
 .contact-card{
     width:70%;
@@ -55,7 +81,10 @@ button{
     border-radius:15px;
     background:rgba(255,255,255,0.20);
     backdrop-filter:blur(8px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
+
+/* Form */
 
 form{
     width:70%;
@@ -64,17 +93,25 @@ form{
     border-radius:15px;
     background:rgba(255,255,255,0.20);
     backdrop-filter:blur(8px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
 
 input,select,textarea{
     width:100%;
-    padding:8px;
+    padding:10px;
     margin-top:5px;
-    margin-bottom:10px;
+    margin-bottom:12px;
+    border-radius:8px;
+    border:none;
 }
 
 h1,h2{
     text-align:center;
+    color:white;
+}
+
+p{
+    font-size:18px;
 }
 
 .link-btn{
@@ -82,17 +119,32 @@ h1,h2{
     text-decoration:none;
 }
 
+footer{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin-top:20px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <button id="theme-toggle">🌙</button>
 
-<a href="index.html"><button>Home</button></a>
-<a href="gallery.html"><button>Gallery</button></a>
-<a href="aboutme.html"><button>About Me</button></a>
-<a href="contact us.html"><button>Contact Us</button></a>
+<div class="navbar">
+
+<a href="index.html"><button>🏠 Home</button></a>
+
+<a href="gallery.html"><button>🏆 Gallery</button></a>
+
+<a href="aboutme.html"><button>👤 About Me</button></a>
+
+<a href="contact us.html"><button>📞 Contact Us</button></a>
+
+</div>
 
 <div class="contact-card">
 
@@ -102,20 +154,22 @@ h1,h2{
 
 <p>📧 Email: kusumkumaronline@gmail.com</p>
 
-<p>📱 Mobile: 9652120896</p>
+<p>📱 Mobile: +91 9652120896</p>
+
+<p>🎓 SRM University AP - Cybersecurity</p>
 
 <a class="link-btn" href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
-<button>LinkedIn Profile</button>
+<button>💼 LinkedIn Profile</button>
 </a>
 
 <a class="link-btn" href="https://github.com/kumarkotagiri" target="_blank">
-<button>GitHub Profile</button>
+<button>💻 GitHub Profile</button>
 </a>
 
 </div>
 
 <marquee scrollamount="5">
-For any Queries Fill the Form Below 👇
+For Any Queries Fill The Form Below 👇
 </marquee>
 
 <form onsubmit="showSuccessMessage(); return false;">
@@ -145,6 +199,28 @@ For any Queries Fill the Form Below 👇
 </form>
 
 <h2><i>Thank You For Visiting</i></h2>
+
+<hr>
+
+<div style="text-align:center;">
+
+<a href="mailto:kusumkumaronline@gmail.com">
+<button>📧 Email</button>
+</a>
+
+<a href="https://www.linkedin.com/in/kotagiri-kumar-b6b696289" target="_blank">
+<button>💼 LinkedIn</button>
+</a>
+
+<a href="https://github.com/kumarkotagiri" target="_blank">
+<button>💻 GitHub</button>
+</a>
+
+</div>
+
+<footer>
+© 2026 Kotagiri Kumar | Cybersecurity Portfolio
+</footer>
 
 <script>
 
